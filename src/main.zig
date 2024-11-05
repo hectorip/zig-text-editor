@@ -13,7 +13,6 @@ pub fn main() !void {
 
     // Cambiamos al modo inserción
     editor.switchMode(.insert);
-
     // Insertamos algunos caracteres
     try editor.insertChar('H');
     try editor.insertChar('o');
