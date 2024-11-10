@@ -18,7 +18,6 @@ pub fn main() !void {
     try editor.insertChar('o');
     try editor.insertChar('l');
     try editor.insertChar('a');
-    try editor.insertChar('!');
 
     // Imprimimos el contenido
     const stdout = std.io.getStdOut().writer();
@@ -30,4 +29,4 @@ pub fn main() !void {
 
     // Imprimimos el contenido actualizado
     try stdout.print("Contenido después de eliminar: {s}\n", .{editor.getContent()});
-} 
+}
